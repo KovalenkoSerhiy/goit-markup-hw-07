@@ -301,21 +301,38 @@ ul {
 }
 
 /* phone screen  */
-.benefits ul {
-  width: 396px; 
+.benefits-list {
+  /* max-width: 356px;    */
+}
+
+/* tablet screen  */
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }  
 }
 
 /* desktop screen  */
 @media screen and (min-width: 1200px) {
-  .benefits ul {
+  .benefits-list {
     width: 264px;
+    flex-wrap: nowrap;
   }  
 }
 
+@media screen and (min-width: 767px) {
+  .benefits-item {
+   flex-basis: 356px;
+   }
+ }
+
 @media screen and (max-width: 767px) {
- .benefits-list:not(:last-child) {
+ .benefits-item:not(:last-child):not(:last-child) {
   margin-bottom: 72px;
-}
+  }
 }
 
 .benefits-title {
