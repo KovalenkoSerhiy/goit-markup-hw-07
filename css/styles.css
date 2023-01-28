@@ -81,13 +81,13 @@ ul {
 }
 
 
-.header-nav,
+/* .header-nav,
 .header-nav ul,
 .contacts-list
  {
   display: flex;
   align-items: center;
-}
+} */
 
 .header .container,
 .work ul {
@@ -115,6 +115,8 @@ ul {
 /* ----- HEADER ----- */
 
 .header {
+  padding-top: 26px;
+  padding-bottom: 26px;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -134,6 +136,10 @@ ul {
 .nav-site .link:hover,
 .nav-site .link:focus {
   color: var(--click-color);
+}
+
+.nav-site {
+  display: none;
 }
 
 .studio-header {
@@ -158,6 +164,7 @@ ul {
 }
 
 .nav-link {
+  
   display: flex;
   font-weight: 600;
   font-size: 16px;
@@ -170,6 +177,10 @@ ul {
   transition-property: color;
   transition-duration: 240ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-list {
+  display: none;
 }
 
 .contacts-link {
@@ -186,6 +197,10 @@ ul {
 .contacts-link:focus,
 .contacts-link:hover {
   color: var(--iris-color);
+}
+
+.burger {
+  
 }
 
 /* ----- HERO ----- */
@@ -300,10 +315,7 @@ ul {
   }  
 }
 
-/* phone screen  */
-.benefits-list {
-  /* max-width: 356px;    */
-}
+
 
 /* tablet screen  */
 @media screen and (min-width: 768px) {
@@ -756,13 +768,65 @@ ul {
 
 /* ----- FOOTER ----- */
 
-.footer .container {
-  display: flex;
+.footer {
+  padding: 96px 0;
+  background-color: var(--darc-color);
 }
 
-.footer {
-  padding: 100px 0;
-  background-color: var(--darc-color);
+/* tablet screen  */
+@media screen and (min-width: 768px)  {
+  .footer  {
+    padding-left: 108px;    
+  }  
+}
+
+/* desktop screen  */
+@media screen and (min-width: 1200px)  {
+  .footer  {
+    padding-left: 0;    
+  }  
+}
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  justify-content: center;
+}
+
+/* tablet screen  */
+@media screen and (min-width: 768px)  {
+  .footer .container {
+    /* column-gap: 24px; */
+    justify-content: flex-start;    
+  }  
+}
+
+/* desktop screen  */
+@media screen and (min-width: 1200px) {
+  .footer .container {
+     /* justify-content: flex-start; */
+  }  
+}
+
+/* phone screen */
+.footer-left {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+}
+
+/* tablet screen  */
+@media screen and (min-width: 768px)  {
+  .footer-left {
+    align-items: flex-start;
+  }  
+}
+
+/* desktop screen  */
+@media screen and (min-width: 1200px) {
+  .footer-left {
+  }  
 }
 
 .footer-logo {
@@ -788,13 +852,25 @@ ul {
   margin-top: 16px;
 }
 
+/* tablet screen  */
+@media screen and (min-width: 768px){
+  .soc-media {
+    margin-left: 24px;    
+  }
+}
+
+/* desktop screen  */
+@media screen and (min-width: 1200px){
 .soc-media {
   margin-left: 120px;
+  margin-right: 80px;
+}
 }
 
 .soc-title {
   font-family: "Roboto";
   font-style: normal;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -802,11 +878,19 @@ ul {
   color: var(--decoration-color);
   margin-bottom: 16px;
 }
+
+/* desktop screen  */
+@media screen and (min-width: 768px) {
+  .soc-title {
+    text-align: start;     
+  }  
+}
+
 .footer-soc-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 24px;
+  column-gap: 16px;
   margin: 0 auto;
 }
 
@@ -835,7 +919,24 @@ ul {
 /* ----- FORM ----- */
 
 .footer-form {
-  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+/* tablet screen  */
+@media screen and (min-width: 768px)  {
+  .footer-form {
+    align-items: flex-start;
+  }  
+}
+
+/* desktop screen  */
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    /* margin-left: 80px; */
+  }  
 }
 
 .subscribe-label {
@@ -846,13 +947,22 @@ ul {
 
 .subscribe-form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   column-gap: 24px;
+  row-gap: 16px;
+}
+
+/* tablet screen  */
+@media screen and (min-width: 768px)  {
+  .subscribe-form  {
+    flex-direction: row;
+  }  
 }
 
 .subscribe-input {
-  width: 264px;
+  width: 396px;
   height: 40px;
   padding-left: 16px;
   padding-right: 16px;
@@ -862,6 +972,13 @@ ul {
   border-radius: 4px;
   outline: 1px solid transparent;
   outline-offset: -1px;
+}
+
+/* tablet screen  */
+@media screen and (min-width: 768px) {
+  .subscribe-input {
+    max-width: 264px;    
+  }
 }
 
 .subscribe-input:focus {
@@ -890,8 +1007,8 @@ ul {
 
 .subscribe-icon {
   position: absolute;
-  /* top: 50%;
-  transform: translateY(-50%); */
+  top: 50%;
+  transform: translateY(-50%);
   right: 24px;
 }
 
@@ -1013,6 +1130,7 @@ ul {
   outline: 1px solid var(--iris-color);
   outline-offset: -1px;
 }
+
 /* checkbox */
 .registration-form-agreement {
   display: flex;
@@ -1076,3 +1194,4 @@ ul {
 
   transition: background-color var(--aim);
 }
+

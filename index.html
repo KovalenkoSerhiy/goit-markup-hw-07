@@ -18,13 +18,12 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
+        <a class="header-logo link" href="./index.html">
+          <span class="web-header">WEB</span
+          ><span class="studio-header">STUDIO</span></a>
         <nav class="header-nav">
-          <a class="header-logo link" href="./index.html">
-            <span class="web-header">WEB</span
-            ><span class="studio-header">STUDIO</span></a
-          >
           <ul class="nav-site list">
             <li>
               <a class="nav-link link current" href="./index.html">Studio</a>
@@ -35,22 +34,26 @@
             <li><a class="nav-link link" href="">Contacts</a></li>
           </ul>
         </nav>
-        <div class="heder-info">
-          <ul class="contacts-list list">
-            <li>
-              <a class="contacts-link link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="contacts-link link" href="tel:+110001111111"
-                >+11(000)111-11-11</a
-              >
-            </li>
-          </ul>
-        </div>
+        <ul class="contacts-list list">
+          <li>
+            <a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li>
+            <a class="contacts-link link" href="tel:+110001111111">+11(000)111-11-11</a>
+          </li>
+        </ul>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger" width="24px" height="24px">
+            <use href="./img/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -371,7 +374,7 @@
       </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-left">
           <a class="footer-logo link" href="/index.html">
@@ -438,9 +441,9 @@
           </div>
         </form>
       </div>
-    </footer> --> 
+    </footer>
     <!-- Modal -->
-    <div class="backdrop is-hidden" data-modal> 
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btm" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
