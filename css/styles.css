@@ -255,11 +255,64 @@ ul {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../img/hero-bgr.jpg");
+    url("../img/mobile/bg/hero-bg-mobile.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../img/mobile/bg/hero-bg-mobile@2x.jpg");
+  }
+}
+
+/* screen >= 481px */
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ), url("../img/tablet/bg/hero-bg-tablet.jpg");
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 481px) and (min-resolution: 192dpi),
+  screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image:linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ), url("../img/tablet/bg/hero-bg-tablet@2x.jpg");
+  }
+}
+
+/* screen >= 769px */
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ), url("../img/desktop/bg/hero-bg-desktop.jpg");
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 769px) and (min-resolution: 192dpi),
+  screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image:linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ), url("../img/desktop/bg/hero-bg-desktop@2x.jpg");
+  }
+}
+
 /* phone screen  */
 .hero-title {
   max-width: 318px;
@@ -855,12 +908,6 @@ ul {
   }
 }
 
-/* desktop screen  */
-@media screen and (min-width: 1200px) {
-  .footer-left {
-  }
-}
-
 .footer-logo {
   font-family: "Raleway";
   font-style: normal;
@@ -960,13 +1007,6 @@ ul {
 @media screen and (min-width: 768px) {
   .footer-form {
     align-items: flex-start;
-  }
-}
-
-/* desktop screen  */
-@media screen and (min-width: 1200px) {
-  .footer-form {
-    /* margin-left: 80px; */
   }
 }
 
