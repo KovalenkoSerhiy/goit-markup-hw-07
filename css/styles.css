@@ -422,17 +422,11 @@ ul {
 }
 
 .benefits {
-  padding-top: 77px;
-  padding-bottom: 77px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
-/* tablet screen  */
-@media screen and (min-width: 768px) {
-  .benefits {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
-}
+
 
 /* desktop screen  */
 @media screen and (min-width: 1200px) {
@@ -526,7 +520,7 @@ ul {
 }
 
 .work-title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -541,14 +535,7 @@ ul {
 .team {
   background-color: var(--light-color);
   padding-top: 96px;
-  padding-bottom: 128px;
-}
-
-/* tablet screen  */
-@media screen and (min-width: 768px) {
-  .team {
-    padding-bottom: 104px;
-  }
+  padding-bottom: 96px;
 }
 
 /* desktop screen  */
@@ -582,7 +569,7 @@ ul {
 }
 
 .team-title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -593,7 +580,7 @@ ul {
 }
 
 .subject {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
@@ -640,16 +627,8 @@ ul {
 }
 
 .customer {
-  padding-top: 77px;
-  padding-bottom: 77px;
-}
-
-/* tablet screen  */
-@media screen and (min-width: 768px) {
-  .customer {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 /* desktop screen  */
@@ -777,7 +756,7 @@ ul {
 }
 
 .btm-portfolio {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   align-items: center;
@@ -853,7 +832,7 @@ ul {
 }
 
 .portfolio-title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
