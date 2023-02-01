@@ -124,10 +124,17 @@ ul {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+@media screen and (min-width: 1200px) {
+  .header  {
+    padding-top: 24px;
+  padding-bottom: 24px;
+  }
+
 }
 
 .header-logo {
@@ -167,13 +174,6 @@ ul {
   }
 }
 
-/* desktop screen  */
-@media screen and (min-width: 768px) {
-  .nav-site {
-    margin-right: auto;
-  }
-}
-
 .studio-header {
   color: var(--darc-color);
 }
@@ -186,7 +186,7 @@ ul {
 .nav-link.current::after {
   content: "";
   position: absolute;
-  bottom: -38px;
+  bottom: -24px;
   left: 0;
   display: block;
   width: 100%;
@@ -195,12 +195,7 @@ ul {
   background-color: var(--iris-color);
 }
 
-/* desktop screen  */
-@media screen and (min-width: 1200px) {
-  .nav-link.current::after {
-    bottom: -24px;
-  }
-}
+
 
 .nav-link {
   display: flex;
@@ -219,7 +214,6 @@ ul {
   .contacts-list {
     display: flex;
     flex-direction: column;
-    row-gap: 4px;
     margin-left: auto;
   }
 }
@@ -237,6 +231,10 @@ ul {
   .contacts-list {
     display: none;
   }
+}
+
+.contacts-list li {
+  line-height: 1.25;
 }
 
 .contacts-link {
@@ -414,6 +412,7 @@ ul {
   align-items: center;
   background: var(--light-color);
   border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -1156,7 +1155,7 @@ ul {
 
 .modal {
   position: absolute;
-  /* width: 392px; */
+  width: 90vw;
   /* min-height: 576px; */
   left: 50%;
   top: 50%;
@@ -1166,6 +1165,13 @@ ul {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+
+@media screen and (min-width: 428px) {
+  .modal {
+    width: 392px;    
+  }
 }
 
 /* tablet screen  */
@@ -1464,6 +1470,9 @@ ul {
   color: var(--iris-color);
 }
 
+.mobile-contacts-link.accent {
+  color: var(--iris-color);
+}
 
 @media (min-width: 428px) {
   .mobile-contacts-link.accent {
